@@ -1,0 +1,101 @@
+/* 
+Título: Juego del Piedra, Papel o Tijeras.
+Nivel Educativo: Ciclo Formativo de Grado Superior
+Curso: DAM, DAW o ASYR
+Conocimientos del alumnado I: Tipos de Datos, Constantes y Variables 
+Conocimientos del alumnado II: Operaciones Aritméticas, Lógicas y Relacionales
+Concomientos del alumnado III: Instrucciones de Control Condicional
+Fecha: 03 / 06 / 2023
+Autor: Xavi Garcia (ElCiberProfe)
+Lenguaje: JavaScript
+*/
+
+/* Estilos CSS del Piedra, Papel o Tijeras */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    0deg,
+    rgba(2, 125, 255, 1) 0%,
+    rgba(0, 255, 251, 1) 100%
+  );
+  color: #000;
+  font-size: 16px;
+}
+
+table {
+  text-align: center;
+  margin: 1rem;
+  box-shadow: inset 2px 2px 50px 15px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  /*border-collapse: collapse;*/
+}
+
+table thead th {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+table th,
+td {
+  box-shadow: inset 0px 0px 10px 1px rgba(255, 255, 255, 0.6);
+  padding: 1rem;
+}
+
+.selector {
+  padding: 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: solid 1px #999;
+  box-shadow: 2px 4px 0px 3px #999;
+  transition: ease-in-out 0.5s;
+}
+
+.selector:hover {
+  scale: 1.1;
+  box-shadow: 0px 0px 3px 2px #999;
+}
+
+.boton {
+  position: relative;
+  font-weight: 700;
+  padding: 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: solid 1px #999;
+  box-shadow: 2px 4px 0px 3px #333;
+  transition: ease-in-out 0.2s;
+}
+
+.boton:active {
+  top: 2px;
+  left: 4px;
+  box-shadow: 0px 0px 0px 3px #333;
+}
+
+.boton:hover {
+  scale: 1.1;
+}
+
+h2 {
+  padding: 1rem;
+  box-shadow: inset 2px 2px 50px 15px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: ease-in-out 1s;
+}
+
+h2:hover {
+  scale: 1.1;
+}
+
+img {
+  width: 50%;
+}

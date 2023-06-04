@@ -1,0 +1,74 @@
+<!-- 
+Título: Juego del Piedra, Papel o Tijeras.
+Nivel Educativo: Ciclo Formativo de Grado Superior
+Curso: DAM, DAW o ASYR
+Conocimientos del alumnado I: Tipos de Datos, Constantes y Variables 
+Conocimientos del alumnado II: Operaciones Aritméticas, Lógicas y Relacionales
+Concomientos del alumnado III: Instrucciones de Control Condicional
+Fecha: 03 / 06 / 2023
+Autor: Xavi Garcia (ElCiberProfe)
+Lenguaje: JavaScript 
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PEC 1 - Piedra, Papel o Tijeras</title>
+    <meta
+      name="description"
+      content="Juego del Piedra, Papel o Tijeras desarrollado en JavaScript"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Xavi Garcia (elciberprofe)" />
+    <meta name="copyright" content="Xavi Garcia (elciberprofe)" />
+    <link rel="stylesheet" href="./piedra-papel-tijeras.css" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th colspan="3"><h1>PIEDRA, PAPEL O TIJERAS</h1></th>
+      </thead>
+      <tr>
+        <td>
+          <select class="selector" name="opcionJugador1" id="opcionJugador1">
+            <option value="piedra">PIEDRA</option>
+            <option value="papel">PAPEL</option>
+            <option value="tijeras">TIJERAS</option>
+          </select>
+        </td>
+        <td>
+          <button class="boton" onclick="realizarTirada(1)">
+            Tira Jugador 1
+          </button>
+        </td>
+        <td id="imagenTiradaJugador1"><h2>Imagen Opción Jugador 1</h2></td>
+      </tr>
+      <tr>
+        <td>
+          <select class="selector" name="opcionJugador2" id="opcionJugador2">
+            <option value="piedra">PIEDRA</option>
+            <option value="papel">PAPEL</option>
+            <option value="tijeras">TIJERAS</option>
+          </select>
+        </td>
+        <td>
+          <button class="boton" onclick="realizarTirada(2)">
+            Tira Jugador 2
+          </button>
+        </td>
+        <td id="imagenTiradaJugador2"><h2>Imagen Opción Jugador 2</h2></td>
+      </tr>
+      <tr>
+        <td><h2 id="numeroRondaActual">Número de Ronda Actual: 0</h2></td>
+        <td>
+          <h2 id="jugadorGanadorRonda">Ganador de la Ronda Jugador: 0</h2>
+        </td>
+        <td id="imagenGanadorRonda">
+          <h2>Imagen Opción Ganadora</h2>
+        </td>
+      </tr>
+    </table>
+    <script src="./piedra-papel-tijeras.js" async defer></script>
+  </body>
+</html>
